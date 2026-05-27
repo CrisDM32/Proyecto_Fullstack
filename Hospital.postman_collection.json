@@ -1,0 +1,1070 @@
+{
+  "info": {
+    "_postman_id": "613a3ea7-8afb-4fd6-a9f5-aabacfef731e",
+    "name": "Hospital",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53901658",
+    "_collection_link": "https://go.postman.co/collection/53901658-613a3ea7-8afb-4fd6-a9f5-aabacfef731e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Citas",
+      "item": [
+        {
+          "name": "Citas",
+          "item": [
+            {
+              "name": "Mostrar Cita Por Id Agenda",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas/agendas/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas",
+                    "agendas",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Mostrar Cita Por Id Pago",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas/pagos/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas",
+                    "pagos",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Actualizar Cita",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idPaciente\" : 3,\r\n    \"idProfesional\" : 2,\r\n    \"idAgenda\" : 2,\r\n    \"idPago\": 2,\r\n    \"fechaCita\": \"2026-05-27\",\r\n    \"horaCita\" : \"2026-05-27T14:30:00\",\r\n    \"motivoConsulta\" : \"Dolor de espalda\",\r\n    \"estadoCita\" : \"CANCELADA\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas/2",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Mostrar Cita Por Id Profesional",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas/profesionales/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas",
+                    "profesionales",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Eliminar Citas",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idPaciente\" : 2,\r\n    \"idProfesional\" : 2,\r\n    \"idAgenda\" : 2,\r\n    \"idPago\": 2,\r\n    \"fechaCita\": \"2026-05-27\",\r\n    \"horaCita\" : \"2026-05-27T14:30:00\",\r\n    \"motivoConsulta\" : \"Dolor de espalda\",\r\n    \"estadoCita\" : \"CANCELADA\"\r\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Mostrar Cita Por Id",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Mostrar Cita Por Id Paciente",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas/pacientes/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas",
+                    "pacientes",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Mostrar Citas",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Crear Cita",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idPaciente\" : 2,\r\n    \"idProfesional\" : 2,\r\n    \"idAgenda\" : 2,\r\n    \"idPago\": 2,\r\n    \"fechaCita\": \"2026-05-27\",\r\n    \"horaCita\" : \"2026-05-27T14:30:00\",\r\n    \"motivoConsulta\" : \"Dolor de espalda\",\r\n    \"estadoCita\" : \"CANCELADA\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/citas",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "citas"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Profesionales",
+          "item": [
+            {
+              "name": "Obtener Profesionales por Id",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/profesionales/2",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "profesionales",
+                    "2"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Obtener Profesionales",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9003/api/v1/profesionales",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9003",
+                  "path": [
+                    "api",
+                    "v1",
+                    "profesionales"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Crear un Profesional",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{   \r\n    \"rut\": 200139070,\r\n    \"nombreProfesional\": \"Javier Rojas\",\r\n    \"especialidad\": \"Medico General\",\r\n    \"telefono\": 976868686,\r\n    \"correo\": \"prueba1@gmail.com\",\r\n    \"direccion\": \"prueba 1\",\r\n    \"numLicencia\": \"111111\",\r\n    \"fechaContratacion\": \"2014-05-05\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9001/api/v1/profesionales",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9001",
+                  "path": [
+                    "api",
+                    "v1",
+                    "profesionales"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Editar un Profesional",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{   \r\n    \"rut\": 200139070,\r\n    \"nombreCompleto\": \"Javier Rojas\",\r\n    \"especialidad\": \"Medico General\",\r\n    \"telefono\": 976868686,\r\n    \"correo\": \"prueba1@gmail.com\",\r\n    \"direccion\": \"prueba 1\",\r\n    \"numLicencia\": \"111112\",\r\n    \"fechaContratacion\": \"2014-05-05\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9003/api/v1/profesionales/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9003",
+                  "path": [
+                    "api",
+                    "v1",
+                    "profesionales",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Eliminar un Profesional",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{   \r\n    \"rut\": 200139070,\r\n    \"nombreCompleto\": \"Javier Rojas\",\r\n    \"especialidad\": \"Medico General\",\r\n    \"telefono\": 976868686,\r\n    \"correo\": \"prueba1@gmail.com\",\r\n    \"direccion\": \"prueba 1\",\r\n    \"numLicencia\": \"111111\",\r\n    \"fechaContratacion\": \"2014-05-05\"\r\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:9003/api/v1/profesionales/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9003",
+                  "path": [
+                    "api",
+                    "v1",
+                    "profesionales",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agendas Médicas",
+          "item": [
+            {
+              "name": "MOSTRAR AGENDAS POR ID",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9003/api/v1/agendas/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9003",
+                  "path": [
+                    "api",
+                    "v1",
+                    "agendas",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "MOSTRAR TODAS LAS AGENDAS",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{   \r\n    \"rut\": 200139070,\r\n    \"nombreCompleto\": \"Javier Rojas\",\r\n    \"especialidad\": \"Medico General\",\r\n    \"telefono\": 976868686,\r\n    \"correo\": \"prueba1@gmail.com\",\r\n    \"direccion\": \"prueba 1\",\r\n    \"numLicencia\": \"111111\",\r\n    \"fechaContratacion\": \"2014-05-05\"\r\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:9003/api/v1/agendas",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9003",
+                  "path": [
+                    "api",
+                    "v1",
+                    "agendas"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "EDITAR AGENDA",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idProfesional\": 3,\r\n    \"fecha\": \"2020-05-05\",\r\n    \"horaInicioTurno\": \"10:00\",\r\n    \"horaFinTurno\": \"17:00\",\r\n    \"asistenciaTurno\": \"Presente\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/agendas/5",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "agendas",
+                    "5"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "ELIMINAR AGENDAS",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9003/api/v1/agendas/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9003",
+                  "path": [
+                    "api",
+                    "v1",
+                    "agendas",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "CREAR AGENDA",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idProfesional\": 1,\r\n    \"fecha\": \"2020-05-05\",\r\n    \"horaInicioTurno\": \"10:00\",\r\n    \"horaFinTurno\": \"18:00\",\r\n    \"asistenciaTurno\": \"Presente\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9003/api/v1/agendas",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9003",
+                  "path": [
+                    "api",
+                    "v1",
+                    "agendas"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "MOSTRAR AGENDAS POR ID PROFESIONAL",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pacientes",
+      "item": [
+        {
+          "name": "Pacientes",
+          "item": [
+            {
+              "name": "Obtener Paciente por Id",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/pacientes/7",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "pacientes",
+                    "7"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Obtener Pacientes",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/pacientes",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "pacientes"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Eliminar Pacientes",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/pacientes/",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "pacientes",
+                    ""
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Actualizar Paciente",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"contactoEmergencia\": \"Eduardo Rojas\",\r\n    \"correo\": \"prueba1@gmail.com\",\r\n    \"direccion\": \"prueba 1\",\r\n    \"fechaNacimiento\": \"2009-12-03\",\r\n    \"genero\": \"Masculino\",\r\n    \"grupoSanguineo\": \"APositivo\",\r\n    \"idPaciente\": 1,\r\n    \"nombre\": \"Javier Rojas\",\r\n    \"rut\": 200139078,\r\n    \"telefono\": 976868686,\r\n    \"telefonoEmergencia\": 956565656\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/pacientes/7",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "pacientes",
+                    "7"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Crear Paciente",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{   \r\n    \"nombre\": \"Javier Rojas\",\r\n    \"rut\": 200139070,\r\n    \"fechaNacimiento\": \"2009-12-03\",\r\n    \"genero\": \"Masculino\",\r\n    \"telefono\": 976868686,\r\n    \"correo\": \"prueba1@gmail.com\",\r\n    \"direccion\": \"prueba 1\",\r\n    \"grupoSanguineo\": \"APositivo\",\r\n    \"contactoEmergencia\": \"Eduardo Rojas\",\r\n    \"telefonoEmergencia\": 956565656\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/pacientes",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "pacientes"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Contactos de Emergencia",
+          "item": [
+            {
+              "name": "Obtener Contactos de Emergencia",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/contactos",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "contactos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Eliminar Contacto",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nombreContactoEmergencia\" : \"Camila Fuentes\",\r\n    \"telefonoContactoEmergencia\" : 999999999\r\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/contactos/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "contactos",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Editar Contacto",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nombreContactoEmergencia\" : \"Camila Fuentes\",\r\n    \"telefonoContactoEmergencia\" : 999999999\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/contactos/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "contactos",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Crear Contactos de Emergencia",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"nombreContactoEmergencia\" : \"Camilo Fuentes\",\r\n    \"telefonoContactoEmergencia\" : 999999999\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/contactos",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "contactos"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Obtener Contactos por Id",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:9000/api/v1/contactos/1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "9000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "contactos",
+                    "1"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pagos",
+      "item": [
+        {
+          "name": "Pagos",
+          "item": [
+            {
+              "name": "Citas",
+              "item": [
+                {
+                  "name": "MOSTRAR TODAS LAS CITAS",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/citas",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "citas"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "CREAR CITA",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"nombrePaciente\":\"Javier Rojas\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/citas",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "citas"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "ELIMINAR CITAS",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"nombrePaciente\":\"Javiera Rojas\"\r\n}"
+                    },
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/citas/1",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "citas",
+                        "1"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "MOSTRAR CITAS POR ID",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/citas/1",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "citas",
+                        "1"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "EDITAR CITAS",
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"nombrePaciente\":\"Javiera Rojas\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/citas/1",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "citas",
+                        "1"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "Pagos",
+              "item": [
+                {
+                  "name": "ELIMINAR PAGOS",
+                  "request": {
+                    "method": "DELETE",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"nombrePaciente\":\"Javiera Rojas\"\r\n}"
+                    },
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/pagos/1",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "pagos",
+                        "1"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "EDITAR PAGO",
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"idCita\":1,\r\n    \"montoPago\" : 10001,\r\n    \"metodoPago\" : \"Transbank\",\r\n    \"idTransaccionTarjeta\" : 1111,\r\n    \"estadoPago\" : \"Aprobado\",\r\n    \"fechaPago\" : \"2000-05-05\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/pagos/1",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "pagos",
+                        "1"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "MOSTRAR TODOS LOS PAGOS",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/pagos",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "pagos"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "CREAR PAGOS",
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"nombrePaciente\":\"Javier Rojas\"\r\n}"
+                    },
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/pagos",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "pagos"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "MOSTRAR PAGOS POR ID",
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost:9000/api/v1/pagos/1",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "port": "9000",
+                      "path": [
+                        "api",
+                        "v1",
+                        "pagos",
+                        "1"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
